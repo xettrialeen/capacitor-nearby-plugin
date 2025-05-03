@@ -1,0 +1,48 @@
+{
+  "name": "capacitor-nearby-plugin",
+  "version": "1.0.0", 
+  "description": "Capacitor plugin for Google Nearby Connections API",
+  "main": "dist/plugin.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.js",
+  "scripts": {
+    "build": "npm run clean && rollup -c",
+    "clean": "rimraf ./dist",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xettrialeen/capacitor-nearby-plugin.git"
+  },
+  "keywords": [
+    "capacitor",
+    "plugin",
+    "native",
+    "nearby",
+    "bluetooth",
+    "wifi",
+    "p2p",
+    "mesh"
+  ],
+  "author": "Xettri Aleen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xettrialeen/capacitor-nearby-plugin/issues"
+  },
+  "homepage": "https://github.com/xettrialeen/capacitor-nearby-plugin#readme",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "peerDependencies": {
+    "@capacitor/core": ">=7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/docgen": "^0.3.0",
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "rimraf": "^6.0.1",
+    "rollup": "^2.79.1"
+  }
+}
